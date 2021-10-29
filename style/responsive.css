@@ -1,0 +1,54 @@
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 5px;
+
+        width: 300px;
+    }
+
+    .btn-div {
+        margin-bottom: 50px;
+    }
+
+    /* .filme-principal .descricao {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+    } */
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .descricao {
+        max-width: 500px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .nav-links {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .descricao {
+        max-width: 500px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .nav-links {
+        margin-bottom: 1rem;
+    }
+}

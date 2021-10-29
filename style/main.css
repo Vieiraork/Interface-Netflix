@@ -1,0 +1,118 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+    --white: #FFFFFF;
+    --light-gray: #AAA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* Elementos base */
+
+body {
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 2.5rem;
+
+    margin-left: .3125rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--light-gray);
+
+    margin-right: .625rem;
+}
+
+header nav a:hover {
+    color: var(--white);
+    transition: 300ms;
+}
+
+/* Filme */
+
+.filme-principal {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .1)), url('../img/Mr.\ Robot.jpg');
+
+    height: 25rem;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 5.625rem;
+    margin-top: .625rem;
+}
+
+.filme-principal .titulo {
+    font-family: 'Trebuchet MS';
+    font-size: 2rem;
+
+    margin-top: 10%;
+}
+
+.filme-principal .container {
+    width: 70%;
+    margin-left: 10px;
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    font-family: Arial;
+    font-size: 1.8rem;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--white);
+
+    border: none;
+    border-radius: 2px;
+
+    padding: 1rem 2rem;
+    margin-right: .9rem;
+
+    font-size: .75rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    transition: 300ms ease-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    
+    display: block;
+}
